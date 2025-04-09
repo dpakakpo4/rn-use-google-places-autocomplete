@@ -70,7 +70,7 @@ const useGooglePlacesAutocomplete = ({
           throw new Error(`HTTP error ${response.status}`);
         }
 
-        const data = await response.json();
+        const data: any = await response.json();
         const predictions: PlacePrediction[] = data.suggestions || [];
 
         // Fetch geocode based on place name
@@ -84,7 +84,7 @@ const useGooglePlacesAutocomplete = ({
             const geoResponse = await fetch(
               `${geocodingUrl}?${params.toString()}`
             );
-            const geoData = await geoResponse.json();
+            const geoData: any = await geoResponse.json();
 
             return (
               geoData.results[0]?.geometry.location || { lat: null, lng: null }
