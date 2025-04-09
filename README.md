@@ -20,9 +20,9 @@ This solves all that in one clean, open-source package 🚀
 ## 📦 Installation
 
 ```bash
-npm install use-google-places-autocomplete
+npm install rn-use-google-places-autocomplete
 # or
-yarn add use-google-places-autocomplete
+yarn add rn-use-google-places-autocomplete
 ```
 
 ---
