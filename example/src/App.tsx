@@ -14,7 +14,7 @@ export default function App() {
   const { query, setQuery, places, loading, error } =
     useGooglePlacesAutocomplete({
       language: 'en',
-      gcpApiKey: 'YourApiCode',
+      gcpApiKey: 'SOME_API_KEY',
     });
 
   return (
@@ -31,13 +31,13 @@ export default function App() {
       {error && <Text style={styles.error}>Error : {error}</Text>}
       <FlatList
         refreshControl={
-          <RefreshControl onRefresh={() => { }} refreshing={loading} />
+          <RefreshControl onRefresh={() => {}} refreshing={loading} />
         }
         refreshing={loading}
         data={places}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
-          <TouchableOpacity style={styles.item} onPress={() => { }}>
+          <TouchableOpacity style={styles.item} onPress={() => {}}>
             <Text style={styles.name}>{item.name}</Text>
             <Text style={styles.address}>{item.fullAddress}</Text>
             <Text style={styles.address}>

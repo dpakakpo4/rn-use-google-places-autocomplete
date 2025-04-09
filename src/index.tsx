@@ -1,3 +1,3 @@
-import useGooglePlacesAutocomplete from './lib/useGooglePlacesAutocomplete';
+import useGooglePlacesAutocomplete from './hook/useGooglePlacesAutocomplete';
 
 export { useGooglePlacesAutocomplete };

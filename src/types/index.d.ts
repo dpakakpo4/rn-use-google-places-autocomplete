@@ -37,6 +37,7 @@ export interface RnUseGooglePlacesAutocompleteProps {
   language?: string;
   autocompUrl?: string;
   geocodingUrl?: string;
+  timeoutValue?: number;
 }
 
 export type GoogleCountryCode =
