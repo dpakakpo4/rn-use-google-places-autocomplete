@@ -1,6 +1,6 @@
 {
   "name": "rn-use-google-places-autocomplete",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An easy-to-use hook for integrating Google Places Autocomplete in your app with Maps API. 🚀",
   "source": "./src/index.tsx",
   "main": "./lib/module/index.js",
